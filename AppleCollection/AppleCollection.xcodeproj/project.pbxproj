@@ -18,6 +18,7 @@
 		25AD19EE20FC596A00B7EEF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25AD19EC20FC596A00B7EEF7 /* LaunchScreen.storyboard */; };
 		25AD19F920FC596A00B7EEF7 /* AppleCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AD19F820FC596A00B7EEF7 /* AppleCollectionTests.swift */; };
 		25AD1A0420FC596A00B7EEF7 /* AppleCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AD1A0320FC596A00B7EEF7 /* AppleCollectionUITests.swift */; };
+		25E71FA020FD03C400FCEAA8 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E71F9F20FD03C300FCEAA8 /* ProductList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		25AD19FF20FC596A00B7EEF7 /* AppleCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AD1A0320FC596A00B7EEF7 /* AppleCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCollectionUITests.swift; sourceTree = "<group>"; };
 		25AD1A0520FC596A00B7EEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25E71F9F20FD03C300FCEAA8 /* ProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				25AD19EC20FC596A00B7EEF7 /* LaunchScreen.storyboard */,
 				25AD19EF20FC596A00B7EEF7 /* Info.plist */,
 				2504F27420FC6C72003CDA92 /* CollectionViewCell.swift */,
+				25E71F9F20FD03C300FCEAA8 /* ProductList.swift */,
 			);
 			path = AppleCollection;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25AD19E620FC596A00B7EEF7 /* MainController.swift in Sources */,
+				25E71FA020FD03C400FCEAA8 /* ProductList.swift in Sources */,
 				25AD19E420FC596A00B7EEF7 /* AppDelegate.swift in Sources */,
 				2504F27520FC6C72003CDA92 /* CollectionViewCell.swift in Sources */,
 			);

@@ -19,6 +19,7 @@ class MainController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var images = ["iPhone.png", "iPad.png", "Macbook.png"]
     var list = ["iPhone", "iPad", "Macbook"]
+    var category = -1
     
     // Main function 
     
@@ -28,6 +29,8 @@ class MainController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     // Support functions
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return list.count
@@ -40,6 +43,20 @@ class MainController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.imgType.image = UIImage.init(named: images[indexPath.row])
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.category = indexPath.row
+        
+        performSegue(withIdentifier: "segueAToB", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segueAToB") {
+            let destination = segue.destination as! ProductList
+            
+            destination.category = self.category
+        }
     }
 
 }

@@ -82,11 +82,30 @@
                     <navigationItem key="navigationItem" title="Apple showcase" id="NZS-8v-TXg"/>
                     <connections>
                         <outlet property="collectionView" destination="xWx-Ve-0Ir" id="bIZ-Gk-gQC"/>
+                        <segue destination="1cu-Vd-hxy" kind="show" identifier="segueAToB" id="LFj-II-N6o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703.125" y="-95"/>
+            <point key="canvasLocation" x="846" y="-95"/>
+        </scene>
+        <!--ProductList-->
+        <scene sceneID="iiI-p9-vXa">
+            <objects>
+                <viewController title="ProductList" id="1cu-Vd-hxy" customClass="ProductList" customModule="AppleCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tS1-hN-gH9"/>
+                        <viewControllerLayoutGuide type="bottom" id="758-y7-gbq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a6U-pq-bp1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zls-Af-QP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="-95"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ilp-Oi-B88">
