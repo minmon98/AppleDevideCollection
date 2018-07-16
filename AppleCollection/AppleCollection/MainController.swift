@@ -8,14 +8,35 @@
 
 import UIKit
 
-class MainController: UIViewController {
+class MainController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    // Controls 
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    // Variables
+    
+    var list = ["iPhone", "iPad", "Macbook"]
     
     // Main function 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    // Support functions
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCellID", for: indexPath) as! CollectionViewCell
+        cell.lblType.text = list[indexPath.row]
+        
+        return cell
     }
 
 }

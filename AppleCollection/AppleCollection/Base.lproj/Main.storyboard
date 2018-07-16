@@ -25,21 +25,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J4l-l9-hlM">
-                                    <size key="itemSize" width="135" height="135"/>
+                                    <size key="itemSize" width="190" height="190"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCellID" id="gmx-NZ-2pq" customClass="CollectionViewCell" customModule="AppleCollection" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                        <rect key="frame" x="65" y="0.0" width="190" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CU-8K-5mq">
-                                                    <rect key="frame" x="46" y="49" width="42" height="21"/>
+                                                    <rect key="frame" x="74" y="49" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -51,8 +51,15 @@
                                             <constraint firstItem="8CU-8K-5mq" firstAttribute="centerX" secondItem="gmx-NZ-2pq" secondAttribute="centerX" id="iAD-2P-py2"/>
                                             <constraint firstItem="8CU-8K-5mq" firstAttribute="top" secondItem="gmx-NZ-2pq" secondAttribute="top" constant="49" id="v6V-lM-C7h"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="lblType" destination="8CU-8K-5mq" id="5bQ-WP-bRi"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="S0h-Vf-6ym"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oC2-GN-PbF"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,10 +71,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Apple showcase" id="NZS-8v-TXg"/>
+                    <connections>
+                        <outlet property="collectionView" destination="xWx-Ve-0Ir" id="bIZ-Gk-gQC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="-95"/>
+            <point key="canvasLocation" x="710.625" y="-95"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ilp-Oi-B88">

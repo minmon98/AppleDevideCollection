@@ -10,6 +10,9 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    // Controls 
+    
+    @IBOutlet weak var lblType: UILabel!
     
     
 }
