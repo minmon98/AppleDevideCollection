@@ -17,6 +17,7 @@ class MainController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Variables
     
+    var images = ["iPhone.png", "iPad.png", "Macbook.png"]
     var list = ["iPhone", "iPad", "Macbook"]
     
     // Main function 
@@ -34,7 +35,9 @@ class MainController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCellID", for: indexPath) as! CollectionViewCell
+        
         cell.lblType.text = list[indexPath.row]
+        cell.imgType.image = UIImage.init(named: images[indexPath.row])
         
         return cell
     }

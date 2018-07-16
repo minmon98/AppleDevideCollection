@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2504F27520FC6C72003CDA92 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2504F27420FC6C72003CDA92 /* CollectionViewCell.swift */; };
+		25416EC020FCFB58005AFF66 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 25416EBD20FCFB58005AFF66 /* iPad.png */; };
+		25416EC120FCFB58005AFF66 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 25416EBE20FCFB58005AFF66 /* iPhone.png */; };
+		25416EC220FCFB58005AFF66 /* Macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 25416EBF20FCFB58005AFF66 /* Macbook.png */; };
 		25AD19E420FC596A00B7EEF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AD19E320FC596A00B7EEF7 /* AppDelegate.swift */; };
 		25AD19E620FC596A00B7EEF7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AD19E520FC596A00B7EEF7 /* MainController.swift */; };
 		25AD19E920FC596A00B7EEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25AD19E720FC596A00B7EEF7 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		2504F27420FC6C72003CDA92 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		25416EBD20FCFB58005AFF66 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = images/iPad.png; sourceTree = SOURCE_ROOT; };
+		25416EBE20FCFB58005AFF66 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = images/iPhone.png; sourceTree = SOURCE_ROOT; };
+		25416EBF20FCFB58005AFF66 /* Macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Macbook.png; path = images/Macbook.png; sourceTree = SOURCE_ROOT; };
 		25AD19E020FC596A00B7EEF7 /* AppleCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AD19E320FC596A00B7EEF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25AD19E520FC596A00B7EEF7 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25416EBC20FCFB3B005AFF66 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				25416EBD20FCFB58005AFF66 /* iPad.png */,
+				25416EBE20FCFB58005AFF66 /* iPhone.png */,
+				25416EBF20FCFB58005AFF66 /* Macbook.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		25AD19D720FC596A00B7EEF7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 		25AD19E220FC596A00B7EEF7 /* AppleCollection */ = {
 			isa = PBXGroup;
 			children = (
+				25416EBC20FCFB3B005AFF66 /* images */,
 				25AD19E320FC596A00B7EEF7 /* AppDelegate.swift */,
 				25AD19E520FC596A00B7EEF7 /* MainController.swift */,
 				25AD19E720FC596A00B7EEF7 /* Main.storyboard */,
@@ -235,7 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25416EC220FCFB58005AFF66 /* Macbook.png in Resources */,
+				25416EC120FCFB58005AFF66 /* iPhone.png in Resources */,
 				25AD19EE20FC596A00B7EEF7 /* LaunchScreen.storyboard in Resources */,
+				25416EC020FCFB58005AFF66 /* iPad.png in Resources */,
 				25AD19EB20FC596A00B7EEF7 /* Assets.xcassets in Resources */,
 				25AD19E920FC596A00B7EEF7 /* Main.storyboard in Resources */,
 			);

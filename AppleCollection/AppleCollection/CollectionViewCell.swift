@@ -13,6 +13,7 @@ class CollectionViewCell: UICollectionViewCell {
     // Controls 
     
     @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var imgType: UIImageView!
     
     
 }
